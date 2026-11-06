@@ -1,0 +1,27 @@
+{
+  "name": "israel-bank-branches",
+  "version": "1.0.0",
+  "description": "Israeli bank branches and bank codes from the Bank of Israel open data on data.gov.il: find a branch by bank and branch number, search by city or street, nearest branches, SWIFT codes",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "files": ["index.js", "index.d.ts"],
+  "sideEffects": false,
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "node --test test.js",
+    "test:live": "LIVE=1 node --test test.js"
+  },
+  "keywords": ["israel", "bank", "branches", "bank-code", "swift", "סניפי בנקים", "מספר סניף", "בנק ישראל", "data.gov.il", "hebrew"],
+  "author": "Aiterra <info@aiterra.co.il> (https://www.aiterra.co.il)",
+  "license": "MIT",
+  "homepage": "https://www.aiterra.co.il/tools/bank-branch-lookup",
+  "repository": { "type": "git", "url": "git+https://github.com/aiterra-il/israel-bank-branches.git" },
+  "bugs": { "url": "https://github.com/aiterra-il/israel-bank-branches/issues" }
+}
